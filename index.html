@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Tab Styles Inspiration</title>
+		<meta name="description" content="Tab Styles Inspiration: A small collection of styles for tabs" />
+		<meta name="keywords" content="tabs, inspiration, web design, css, modern, effects, svg" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/tabs.css" />
+		<link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  		<script src="js/modernizr.custom.js"></script>
+  		<style>
+			.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+  		</style>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+		<div class="logo">
+			<h1>JMJ <br> Electricals and Plumbing</h1>
+		</div>
+
+		<div class="menu">
+			<section>
+				<div class="tabs tabs-style-topline">
+					<nav>
+						<ul>
+							<li><a href="#section-topline-1" class="icon icon-home"><span>Home</span></a></li>
+							<li><a href="#section-topline-2" class="icon icon-gift"><span>Deals</span></a></li>
+							<li><a href="#section-topline-3" class="icon icon-upload"><span>Upload</span></a></li>
+							<li><a href="#section-topline-4" class="icon icon-coffee"><span>Work</span></a></li>
+							<li><a href="#section-topline-5" class="icon icon-config"><span>Settings</span></a></li>
+						</ul>
+					</nav>
+					<div class="content-wrap">
+						<section id="section-topline-1"></section>
+						<section id="section-topline-2"></section>
+						<section id="section-topline-3"></section>
+						<section id="section-topline-4"></section>
+						<section id="section-topline-5"></section>
+					</div><!-- /content -->
+				</div><!-- /tabs -->
+			</section>
+		</div>
+			</div>
+			
+
+		</header>
+		<div class="banner-slider">
+				<ul class="rslides">
+  					<li><img src="img/alila/01.jpg" height="400px" alt=""></li>
+  					<li><img src="img/alila/02.jpg" height="400px" alt=""></li>
+  					<li><img src="img/alila/03.jpg" height="400px" alt=""></li>
+				</ul>
+			</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/responsiveslides.min.js"></script>	
+		<script src="js/cbpFWTabs.js"></script>
+		
+		<script>
+			(function() {
+
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+
+
+		</script>
+		<script>
+  $(function() {
+    $(".rslides").responsiveSlides();
+  });
+
+  $(".rslides").responsiveSlides({
+  auto: true,             // Boolean: Animate automatically, true or false
+  speed: 500,            // Integer: Speed of the transition, in milliseconds
+  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+  pager: false,           // Boolean: Show pager, true or false
+  nav: true,             // Boolean: Show navigation, true or false
+  random: false,          // Boolean: Randomize the order of the slides, true or false
+  pause: false,           // Boolean: Pause on hover, true or false
+  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+  prevText: "Previous",   // String: Text for the "previous" button
+  nextText: "Next",       // String: Text for the "next" button
+  maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+  manualControls: "",     // Selector: Declare custom pager navigation
+  namespace: "rslides",   // String: Change the default namespace used
+  before: function(){},   // Function: Before callback
+  after: function(){}     // Function: After callback
+});
+</script>
+
+	</body>
+</html>
