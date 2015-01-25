@@ -224,6 +224,8 @@ header .menu a,a:hover, a:active {text-decoration: none;}
 
 .banner-slider{
 	position: relative;
+	height: 400px;
+	overflow: hidden;
 }
 .rslides1_nav {
   position: absolute;
@@ -246,3 +248,6 @@ header .menu a,a:hover, a:active {text-decoration: none;}
   background-position: right top;
   right: 0;
   }
+
+  section.aboutus{ padding: 100px 0;text-align: center;}
+  section.aboutus h2{margin-bottom: 50px;}
